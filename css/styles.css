@@ -211,8 +211,11 @@ p {
 }
 
 .hero-dark-bg {
-    background: var(--color-navy-blue);
+
     padding: 188px 0 188px 0;
+    border: 1px solid #000000;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), #2E2F42B2 70%), url(../images/peopleoffice.jpg);
+
 
 }
 
@@ -238,6 +241,10 @@ p {
 .hero-button:hover,
 .hero-button:focus {
     background: var(--color-ocean);
+}
+
+.customers {
+    padding: var(--size-padding-blok);
 }
 
 
@@ -330,7 +337,6 @@ p {
 
 .name-team {
     padding: 32px 16px;
-    border-radius: 0px 0px 4px 4px;
 }
 
 /*footer*/
