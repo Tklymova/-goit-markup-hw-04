@@ -442,7 +442,7 @@ p {
     max-width: 264px;
 }
 
-.note-smal-foter {
+.note-smal-footer {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -456,12 +456,17 @@ p {
     margin-bottom: 16px;
 }
 
-.foter-size{
+.footer-size{
     display: flex;
     gap: 120px;
-    align-items: flex-start
+    align-items: baseline;
 }
 
+.icons-size-footer{
+    gap: 16px;}
+
+    .link-icons-footer:hover,
+    .link-icons-footer:focus {background-color: var(--color-green);}
 
 /*portfolio*/
 .section-button {
@@ -529,6 +534,8 @@ p {
     color: var(--color-slate);
 
 }
+.link-marketing {display: block;}
+
 .link-marketing:hover,
 .link-marketing:focus {
     box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
