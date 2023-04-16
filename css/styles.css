@@ -23,7 +23,7 @@
     --aredoing-items: 3;
     --ourtem-items: 4;
     --portfolio-items: 3;
-    --icons-items: 4;
+    --customers-item: 6;
 }
 
 body {
@@ -261,10 +261,22 @@ p {
     padding: var(--size-padding-blok);
 }
 
+.feature-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: var(--color-cloud);
+    border-radius: 4px;
+    margin-bottom: 8px;
+
+}
+
 .feature-size,
 .are-we-doing-size,
 .our-team-size,
-.icons-size {
+.icons-size,
+.customer-size {
     display: flex;
     flex: wrap;
     gap: var(--indent);
@@ -281,11 +293,17 @@ p {
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .icons-pictire {
     fill: var(--color-cloud);
 }
+
+.customer-picture {
+    fill: currentColor;
+}
+
 
 .link-icons:hover,
 .link-icons:focus {
@@ -303,7 +321,15 @@ p {
 
 .our-team-item {
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
     width: calc((100% - var(--indent)*(var(--ourtem-items) - 1))/var(--ourtem-items));
+}
+
+.customer-item {
+    width: calc((100% - var(--indent)*(var(var(--customers-item)) - 1))/var(--customers-item));
+    height: 88px;
 }
 
 .icons-item {
@@ -336,6 +362,29 @@ p {
     text-align: center;
     text-transform: capitalize;
     color: var(--color-navy-blue);
+
+}
+
+.note-big-customers {
+    line-height: 1.1;
+    margin-bottom: 72px;
+}
+
+.link-customers {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-light-slate);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-light-slate);
+}
+
+.link-customers:hover,
+.link-customers:focus {
+    border: var(--color-ocean);
+    color: var(--color-ocean);
 }
 
 .paragraff {
@@ -374,6 +423,8 @@ p {
     padding: 32px 0;
 
 }
+
+
 
 
 /*footer*/
