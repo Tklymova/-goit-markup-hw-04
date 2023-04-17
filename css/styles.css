@@ -384,7 +384,7 @@ p {
 
 .link-customers:hover,
 .link-customers:focus {
-    border: var(--color-ocean);
+    border: 1px solid var(--color-ocean);
     color: var(--color-ocean);
 }
 
