@@ -462,6 +462,7 @@ p {
 .footer-size{
     display: flex;
      align-items: baseline;
+     margin-right: 120px;
 }
 .footer-item-size
 {
